@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/anonymous/layout}">
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/logged-in/layout}">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello</title>
+    <link rel="stylesheet" th:href="@{/css/hello/hello.css}">
 </head>
 
 <body>
     <div layout:fragment="content">
-        <p>Hello world</p>
+        <p></p>
     </div>
+    <th:block layout:fragment="scripts">
+        <script th:src="@{/js/hello/hello.js}"></script>
+    </th:block>
 </body>
 
 </html>
