@@ -1,0 +1,17 @@
+.login-background {
+    position: fixed;
+
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    height: 100%;
+    width: 100%;
+
+    background-image: url("/image/login-background-2.jpg");
+}
+
+.login-form-card {
+    max-width: 500px;
+}
